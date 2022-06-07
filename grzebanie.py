@@ -9,7 +9,7 @@ MAX_POINTS = 10
 
 def main(argv):
 
-    default_file = 'tarcza (1).jpg'
+    default_file = 'tarcza7.jpg'
     default_size = 600, 600
 
     im = Image.open(default_file)
