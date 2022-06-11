@@ -23,7 +23,7 @@ def getScore(scoreboundaries, HoleDist):  # function to assign a score to each h
     return score
 
 
-default = cv2.imread("Tarcza7.jpg")
+default = cv2.imread("Tarcza5.jpg")
 img = cv2.resize(default, (640, 640))
 
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
