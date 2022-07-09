@@ -9,8 +9,9 @@ MAX_POINTS = 10
 
 def main(argv):
 
-    default_file = 'tarcza7.jpg'
+    default_file = 'tarcza1-3.png'
     default_size = 600, 600
+
 
     im = Image.open(default_file)
     im = im.resize(default_size, Image.ANTIALIAS)
@@ -100,7 +101,7 @@ def main(argv):
 
     hits = cv.HoughCircles(canny, cv.HOUGH_GRADIENT, 1, 10,
                            param1=300, param2=10,
-                           minRadius=7, maxRadius=10)
+                           minRadius=10, maxRadius=15)
     # print(f'{hits}"')
 
     score = countHitScore(hits.tolist(), delta_r, biggest_circle_center)
